@@ -1,0 +1,49 @@
+@charset "utf-8";
+/** login **/
+.loginForm{ border:1px solid #d6d6d6; border-radius:5px; background-color:#ffffff;}
+.loginSpan{ display:inline-block; height:38px;line-height:38px; color:#5d5d5d; font-size:15px;}
+.loginAccount{ border:none; padding-left:15px;}
+.loginAccount input{ border:none; width:100%; font-size:15px;height:20px; line-height:20px; margin:9px 0px; }
+.loginPass{ border:none; padding-left:15px;border-top:1px solid #d6d6d6;}
+.loginPass input{ border:none;  width:100%; font-size:15px;height:20px; line-height:20px; margin:9px 0px;} 
+
+.btn-login{ color:#ffffff; background-color:#c60a1e; height:32px; border:1px solid #c60a1e; border-radius:5px;}
+.btn-login:hover,.btn-login:active{ color:#fff;}
+
+/** usercenter**/
+.userBanner{ background:url(../images/base/individualCenter.png) center no-repeat; width:100%; height:104px; padding:20px 0 0 10px; max-width:540px; min-width:320px; margin:0 auto;}
+.userBanner > img{ width:63px; height:63px; border-radius:63px; vertical-align:top; overflow:hidden;}
+.userBanner ul{ display:inline-block; list-style:none; vertical-align:top; color:#ffffff; margin-bottom:0px; margin-top:-3px;}
+.userBanner ul li{ line-height:20px; font-size:12px;}
+.userBanner ul li:first-child { font-size:14px; padding-bottom:3px;}
+.userBanner ul li p span{ display:inline-block; min-width:88px;}
+.userBanner ul li a{ text-decoration:underline; margin-left:10px; color:#ffffff; font-size:10px;}
+.groupList{ border:1px solid #d6d6d6; border-radius:8px; height:53px; background:#fff;}
+.groupList a{ width:33.1%; border-right:1px solid #d6d6d6; height:53px; display:block; float:left; position:relative; text-align:center;}
+.groupList a.icon01{ background:url(../images/base/individualCenter_1_01.png) no-repeat center center; background-size:38px;}
+.groupList a.icon02{ background:url(../images/base/individualCenter_1_02.png) no-repeat center center; background-size:51px;}
+.groupList a.icon03{ background:url(../images/base/individualCenter_1_03.png) no-repeat center center; background-size:51px; border-right:0;}
+.groupList a span{ display:inline-block; min-width:13px; height:13px; border-radius:13px; background:#c60a1e;font-size:12px;line-height:14px; color:#ffffff; text-align:center;margin-left:29px;}
+
+.detailList{ border:1px solid #d6d6d6; border-radius:8px; margin:10px 0; background:#fff;}
+.detailList a{ height:31px; line-height:31px; display:block; border-top:1px solid #d6d6d6; color:#323232; padding:0 10px; font-size:14px;}
+.detailList a:first-child{ border-top:none;}
+.detailList a span{ display:inline-block; width:19px; height:18px; float:right;}
+
+/*setting*/
+.settingContent{ padding:23px 0;}
+.settingContent p{ text-align:center; width:100%; font-size:10px; color:#555555; line-height:19px;}
+.settingBtnGroup a{ display:block; background:#fff; padding:0 12px; height:39px; line-height:39px; border-top:1px solid #d6d6d6; }
+.settingBtnGroup a:nth-child(4){ margin-top:7px;position:relative}
+.settingBtnGroup a > span{ display:inline-block; width:19px; height:18px; margin-top:7px;}
+.settingBtnGroup p{color:#9a9a9a; text-align:left; padding-left:10px; margin-top:8px; font-size:10px;}
+.btnArea{ padding:0 10px; margin-top:14px;}
+.btnArea .btn-default{ background:#c60a1e; color:#fff;}
+.settingSwitch{ position:absolute; right:10px; bottom:1px;}
+/*about anong*/
+.aboutAnong h2{ margin-bottom:12px; line-height:30px; font-weight:400; font-size:24px;}
+.aboutAnong .content span{ color:#c60a1e;}
+.aboutAnong .content p.title{ clear:both; min-height:20px; white-space:pre-wrap;font-size:18px; text-decoration:underline; margin-bottom:10px; font-weight:bold;}
+.aboutAnong .content p.describle{ font-size:16px; text-indent:2em; line-height:24px; margin-bottom:10px;}
+.aboutAnong .content ul{list-style-type:square; padding-left:30px; margin-bottom:10px;}
+.aboutAnong .content ul li{list-style-type:square;font-size:16px; line-height:24px;}

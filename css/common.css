@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;-webkit-appearance: none;box-sizing:border-box; -webkit-tap-hightlight-color:transparent;}
+body{margin:0;padding:0; background-color:#ffffff;font-size:15px;color:#323232; min-width:320px; background-color:#ececec}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, sup, sub{ margin:0;padding:0;list-style:none; font-size:12.8000001907349px;}
+body, input, textarea, button{ font-family:\5FAE\8F6F\96C5\9ED1,"SimHei"; color:#323232}
+p{ padding:0; margin:0;}
+input, textarea{ -webkit-appearance:none; -webkit-border-radius:0;}
+input:focus{ outline:none;}
+.btn:focus{outline:none; color:inherit;}
+a{ color:#323232; text-decoration:none;}
+a:hover, a:focus{ text-decoration:none;}
+a,img{ border:0;}
+em{font-style:normal}
+b{ font-weight:normal;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.vm{ vertical-align:middle;}
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;height:0;visibility:hidden;clear:both; font-size:0;}
+.posiR{ position:relative;}
+.w100{ width:100%!important;}
+.disb{ display:block;}
+.mt10{ margin-top:10px!important;}
+.ml10{ margin-left:10px!important;}
+.pd0{ padding:0px!important;}
+.pd10{ padding:10px!important;}
+.pt10{ padding-top:10px!important;}
+.pr15{ padding-right:15px!important;}
+.h20{ height:20px; display:block;}
+.wbox{ display:-webkit-box;}
+.wbox-flex{ -webkit-box-flex:1!important; word-wrap:break-word;word-break:break-all;}
+.w1{ max-width:540px; min-width:320px; margin:0 auto;}
+.w2{max-width:520px;min-width:300px; margin:0 auto; padding:0rem .625rem;}
+/** header **/
+.header{ height:44px; background:#f7f7f7; width:100%; position:fixed;top:0;left:0; z-index:99999; text-align:center; color:#323232; font-size:18px; line-height:44px; border-bottom:1px solid #fff;}
+.head_left a,.head_right a{ display:block; padding:13px; position:relative;}
+.link a{ line-height:normal;}
+.headtit{ display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:200px; word-break:keep-all; color:#323232;}
+.headtit a{ color:#323232; font-size:18px;}
+.headtit a:active,.headtit a:hover{ color:#323232; font-size:18px;}
+.head_right{}
+.head_right a{ color:#323232; font-size:12px;}
+.head_right a:hover,.head_right a:active{ color:#323232; font-size:12px;}
+.header .link{ font-size:14px; line-height:44px; padding:0 10px;}
+.header .text{ font-size:14px; padding:0; line-height:26px;}
+.header .text a{ color:#858585;}
+.header .more{ display:inline-block; background:url(../images/more.png) 0 0 no-repeat; width:44px; height:43px; background-size:44px 43px; position:absolute; right:0; top:0;}
+.h_login, .logo, .h_cart, .h_home, .h_back, .clock span, .check_arrow,.h_next{ background:url(../images/indexicon.png) no-repeat; background-size:200px;}
+.h_back, .h_cart, .h_home, .h_back, .h_login,.h_next{ display:block; height:18px; width:19px;}
+.h_login{ background-position:-10px -5px;}
+.h_cart{ background-position:-10px -35px;}
+.h_back{ background-position:-10px -65px;}
+.h_home{ background-position:-10px -95px;}
+.h_next{ background-position:-10px -136px;}
+.check_arrow{ position:absolute; right:20px; top:30px; background:url(../images/merchant/checkArrow.png); background-size:10px 15px; width:10px; height:15px;}
+.head_right a em{ border:1px solid #c60a1e;width:14.7969px; height:14.7969px;; border-radius:14px; background:#fff; line-height:12.8000001907349px;text-align:center; color:#c60a1e; position:absolute; right: 4.2px; top: 8.19999980926514px; font-style:normal; font-size:12px;}
+.occupying{ height:44px; position:relative;}
+.btn_red, .btn_gray, .btn_blue{ color:#fff; width:100%; box-shadow:0 1px 1px rgba(0,0,0,.2); background:-webkit-gradient(linear,0 0,0 100%,from(#c60a1e),to(#c60a1e)); background:-moz-linear-gradient(top,#c60a1e,#c60a1e);font-weight:400; height:35px; line-height:35px; text-align:center; font-size:16px; border-radius:4px; display:inline-block;}
+.btn_red:hover, .btn_gray:hover, .btn_blue:hover{ color:#fff;background:-webkit-gradient(linear,0 0,0 100%,from(#c60a1e),to(#c60a1e)); background:-moz-linear-gradient(top,#c60a1e,#c60a1e);}
+#errorModel{ margin-bottom:0px; font-size:14px; color:#f00; padding:10px;}
+.foot{ width:100%; position:fixed; z-index:99999; left:0; bottom:0; height:44px; background:#fff; border-top:1px solid #e8e8e8;}
+.foot .fl{ width:60%;}
+.foot .fr{ width:40%; background:#c60a1e; height:44px;}
+.foot .fl .head_right a em{ left:26px;}
+
+

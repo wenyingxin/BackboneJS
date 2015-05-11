@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/common.css">		
+<link rel="stylesheet" href="../css/merchant.css">
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+	$(function(){
+		
+		$("#addToCart").click(function(){
+			
+			
+			
+			
+		
+		
+			var f=$(".content p").width();
+			var g=$(".content p").offset(),c=g.left+f/4,a=g.top;
+			var b=$(".zb").offset(),e=b.left,d=b.top;
+			var flyElm = $(".flyItem").clone().css({display:"block",left:c,top:a})
+			$("body").append(flyElm);
+			flyElm.animate({
+				position:"absolute",
+				top:d+5,
+				left:e+5,
+				opacity:0,
+				width:0,
+				height:0,
+				
+				},'slow',function(){flyElm.remove();var num =$("#cartNum").text(); Number(num);num++;$("#cartNum").text(num)});
+						
+			});
+			
+		
+		
+		});
+
+</script>
+
+
+<title>动物乐器...</title>
+</head>
+
+<body>
+    <header class="header clearfix">
+    	<div class="head_left fl">
+        	<a href="javascript:void(0)" onclick="javscript:history.go(-1)">
+            	<span class="h_back"></span>
+            </a>
+        </div>
+        <div class="headtit">
+        	<a href="/home">动物乐器...</a>
+        </div>
+        <div class="head_right fr">
+        	<a class="disb more" href="/">
+            	
+            </a>
+        </div>
+    
+    </header>
+	<div class="occupying"></div>
+    <div class="container mechantDetailContainer w1">
+        
+    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          		<!-- Indicators -->
+          		<ol class="carousel-indicators">
+            		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+           			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          		</ol>
+
+                 <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="../images/merchantDetaiImg1.png" class="img-responsive" alt="轮播1">
+                 
+                </div>
+                <div class="item">
+                  <img src="../images/merchantDetaiImg1.png" class="img-responsive" alt="轮播2">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+			</div>
+    		<div class="merchantDetailContent">
+            	<div class="merchatIntroduce">
+                	<p class="title">动物乐器</p>
+                    <div class="content">
+                    	<p>风靡全球的B.toys,受欢迎受欢迎受欢迎受欢迎受
+                        欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎
+                        受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎受欢迎~~~					</p>
+                    </div>
+                    <div class="priceDetail">
+                    	<span class="newPrice">$229.00</span>
+                        <span class="oldPrice">$339.00</span>
+                        <span class="discount">7折</span>
+                        <span>剩余6天 22:33:33</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div  class="merchantDetailIntroduce">
+            	<div class="title">
+                	<span class="mark">满减</span>
+                    <span class="content">圣诞狂抢玩具满39减100，不累计</span>
+                </div>
+                <div class="merchantOptions">
+                	<div>
+                    	<span class="caption">可选：</span>
+                      
+                         <a href="javascript:void(0)" onclick="$(this).toggleClass('selected')" class="choose"><div>首次体验首次体验首次体验首次体验</div></a>
+                         <a href="javascript:void(0)" onclick="$(this).toggleClass('selected')" class="choose"><div>首次体验首次体验首次体验首次体验首次体验</div></a>
+                         <a href="javascript:void(0)" onclick="$(this).toggleClass('selected')" class="choose"><div>首次体验首次体验首次体验</div></a>
+                       
+                    </div>
+                    <div style=" height:60px; line-height:60px;">
+                    	<span class="caption vm">数量：</span>
+                        <div class="sn-count vm">
+							<a href="javascript:;" class="min" id="minCount"></a>
+							<input class="input-count" type="text" value="1">
+							<a href="javascript:;" class="add" id="addCount"></a>
+						</div>
+                    </div>
+                    <div style="margin-bottom:30px;">
+                    	<span class="caption">编码：</span>
+                        <span class="code">1005094</span>
+                    </div>
+                </div>
+            </div>	
+            <div class="merchantDetail clearfix">
+            	<div class="detailpeople">
+                	<img src="../images/peopleLogo.png"/>
+                </div>
+                <div class="detailContent">
+                	<p class="title">阿农说商家</p>
+                    <div class="content">
+                    	<p>美国B.Toys，拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有
+                        拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有
+                        拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有
+                        拥有拥有拥有拥有拥有拥有拥有拥有拥有拥有
+                        拥有拥有拥有拥有拥有拥有拥有~~</p>
+                    </div>
+                </div>
+            </div>
+            <div class="merchantBtnGroup">
+            	<a><span></span>阿农质检 <em></em></a>
+                <a><span></span>商品口碑 <em></em></a>
+                <a><span class="logoParameters"></span>商品参数 <em></em></a>
+                <a><span class="logoDetail"></span>商品详情 <em></em></a>
+            </div>
+                
+    	
+        
+           
+    </div>
+   <div class="foot">
+	<div class="w1" id="itemProcess">
+        <div class="fl">
+            <div class="head_right"><a href="/cart"><span class="h_cart"></span><em class="zb" id="cartNum">0</em><span class="cartTips">去结算</span></a></div>
+        </div>
+        <div class="fr addbuycar" id="addToCart">加入购物车</div>
+        <p id="sepcailNotice"></p>
+    </div>
+</div>
+    <img class="flyItem" src="../images/merchantDetaiImg1.png" style="z-index:99999; display:none; background:#000; position:absolute; left:0px; top:0px; width:100px; height:100px;">
+   
+</body>
+</html>

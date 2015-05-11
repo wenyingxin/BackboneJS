@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/common.css">		
+<link rel="stylesheet" href="../css/base.css">
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/base/jquery.validate.min.js"></script>
+<script src="../js/base/additional-validate-methods.js"></script>
+<script src="../js/base/login.js"></script>
+
+
+<title>登录</title>
+</head>
+
+<body>
+
+	<header class="header clearfix">
+    	<div class="head_left fl">
+        	<a href="javascript:void(0)" onclick="javscript:history.go(-1)">
+            	<span class="h_back"></span>
+            </a>
+        </div>
+        <div class="headtit">
+        	<a href="/home">登录</a>
+        </div>
+        <div class="head_right fr link">
+        	<a href="/">
+            	注册
+            </a>
+        </div>
+    
+    </header>
+	<div class="occupying"></div>
+    
+    <div id="errorModel" class="alert alert-warning alert-dismissible" role="alert" data-dismiss="alert" style="display:none;">
+  		
+	</div>
+	
+    <form method="POST" action="http://m.anongvp.com/login" accept-charset="UTF-8" id="loginForm" novalidate><input name="_token" type="hidden" value="T8uMuQYC9WbMy7rX7JOrS2CkxYXLKPYPdRnFs1sz">
+	<div class="container pd10">
+    	<div class="loginForm">
+        	<div class="loginAccount wbox">
+            	<span class="loginSpan">账号：</span>
+                <div class="wbox-flex pr15">
+                 	<input placeholder="请输入手机号" id="account" name="account" type="text">
+                </div>
+             </div>
+            <div class="loginPass wbox">
+            	<span class="loginSpan">密码：</span>
+                <div class="wbox-flex pr15">
+                	<input placeholder="请输入密码" id="passwd" name="passwd" type="password" value="">
+                </div>
+            </div>	
+        </div>
+        <div class="mt10">
+        	<p id="loginErrorNotice" style="display: block; -webkit-transform-origin: 0px 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);"></p>
+        	<a id="loginBtn" class="btn btn-block btn-login" href="javascript:void(0)">登录</a>
+        </div>
+	</div>
+</form>
+    	
+
+</body>
+</html>

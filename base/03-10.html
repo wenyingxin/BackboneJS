@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+
+<link rel="stylesheet" href="../css/common.css">		
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/switchery.min.css">
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/switchery.min.js"></script>
+
+<script>
+	$(function(){
+		var checkbox = document.querySelector('.js-switch');
+		
+		var switchery = new Switchery(checkbox);
+	})
+
+</script>
+<title>设置</title>
+</head>
+
+<body>
+	<header class="header clearfix">
+    	<div class="head_left fl">
+        	<a href="javascript:void(0)" onclick="javscript:history.go(-1)">
+            	<span class="h_back"></span>
+            </a>
+        </div>
+        <div class="headtit">
+        	<a href="/home">设置</a>
+        </div>
+        <!--
+         <div class="head_right fr">
+        	<a href="/">设置</a>
+        </div>
+        -->
+       
+    
+    </header>
+    <div class="occupying"></div>
+	<div class="settingContent">
+    	<p>米亚宝贝 V2.2.0</p>
+        <p>@2014 北京花王在线商贸有限公司</p>
+    </div>
+    <div class="settingBtnGroup">
+    	<a href="#"><em class="fl vm">关于米亚</em><span class="h_next fr  vm"></span></a>
+        <a href="#"><em class="fl">联系客服</em></a>
+        <a href="#"><em class="fl vm">特别说明</em><span class="h_next fr vm"></span></a>
+        <a href="#"><em class="fl vm">消息推送</em><div class="settingSwitch"><input type="checkbox" class="js-switch"  /></div></a>
+        <p>请在系统【设置】的【通知】中设置推送状态</p>
+    </div>
+   
+    <section>
+        <div class="btnArea">
+            <a href="#" title="退出" onclick="return confirm('确认退出登录？')">
+                <input type="button" class="btn btn-block btn-default" value="退出登录" />
+            </a>
+        </div>
+           
+   </section>
+        
+   
+    	
+
+</body>
+</html>

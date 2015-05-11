@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/common.css">		
+<link rel="stylesheet" href="../css/merchant.css">
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+		
+		$("a[data-toggle=collapse]").bind('click',function(){
+			
+			$("span",$(this)).toggleClass("arrowUp");
+			
+			})
+		
+		
+		})
+
+</script>
+
+<title>结算</title>
+</head>
+
+<body class="bgColor">
+    <header class="header clearfix">
+    	<div class="head_left fl">
+        	<a href="javascript:void(0)" onclick="javscript:history.go(-1)">
+            	<span class="h_back"></span>
+            </a>
+        </div>
+        <div class="headtit">
+        	<a href="/home">结算</a>
+        </div>
+      
+    
+    </header>
+	<div class="occupying"></div>
+    <div class="container pd10 w1">
+    
+   <div class="panel-group cartPanel orderPanel" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+  	<div class="checktit checktitFirst"><span class="receive_info"></span>订单金额</div>
+  	<a class="disb" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div class="panel-heading posiR" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        
+          王强
+        	
+      </h4>
+      <span class="arrowDown"></span>
+    </div>
+    </a>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body posiR">
+        <p>北京北京市朝阳区三环到四环之间樱花西街胜古南里5号楼503</p>
+        <a class="editIcon">编辑</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    <div class="userdiv">
+        <div class="checktit"><span class="receive_info"></span>订单金额</div>
+          <dl class="mlist">
+            <dd>
+                <span class="form_td">¥ 841</span>
+                <span class="form_hd">商品金额</span>
+            </dd>
+            
+            <dd>
+                <span class="form_td">¥ 10</span>
+                <span class="form_hd">运费</span>
+            </dd>
+            <dd>
+                <span class="form_td">¥ 0</span>
+                <span class="form_hd">优惠</span>
+            </dd>
+            <dd>
+                <span class="form_td" id="coupon_price" data-price="0">
+                    <span class="pink" id="useCoupon">使用代金券</span>
+                </span>
+                <span class="form_hd">代金券</span>
+            </dd>            
+            <dd>
+                <span class="form_td" id="pay_total" data-price="851">
+                    ¥ <span>851</span>
+                </span>
+                <span class="form_hd">待支付总额</span>
+            </dd>
+        </dl>
+    </div>
+    
+     <div class="jstips">
+    	<p>米亚宝贝提示：</p>
+        <p>如果您需要为您购买的商品开具发票。请在下单15天后联系米亚宝贝客服400-789-2000并提供订单编号，我们将按国家相关规定为您开具发票。</p>
+    </div>
+    
+    </div>
+   
+    <footer class="merchantFooter">
+    	<div class="w1 posiR">
+    	<div class="footerDetail">
+        	<p class="total">总金额：<em>$200.00</em></p>
+            <p class="tips">为您节省:<em>$100.00</em></p>
+        </div>
+        <a href="#">提交</a>
+        </div>
+    </footer>	
+
+</body>
+</html>
