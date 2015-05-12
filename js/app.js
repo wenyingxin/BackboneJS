@@ -59,6 +59,49 @@ var ProductView = Backbone.View.extend({
 
 });
 
+
+//Collection
+var ProductCollection = Backbone.Collection.extend({
+	model:Product,
+	initialize:function(){
+		this.on({
+			'add':function(model,collection,options){
+				console.log("ID:"+model.id+'模型添加到了集合里面');
+			},
+			'remove':function(model,collection,options){
+				console.log("ID:"+model.id+'模型从集合里面删除掉了');
+			},
+			'change':function(model,options){
+				console.log("集合的模型发生了变化");
+			},
+		});
+	},
+});
+
+//Collection View
+var ProductCollectionView = Backbone.View.extend({
+	tagName:'ul',
+	className:'i_ul rel',
+	id:'hot_ul',
+
+	initialize:function(){
+		this.collection.on('add',this.addOne,this);
+		this.render();
+	},
+
+	render:function(){
+		this.collection.each(this.addOne,this);
+		return this;
+	},
+	addOne:function(product){
+		var productView =  new ProductView({model:product});
+		this.$el.append(productView.render().el);
+	}
+
+});
+
+
+//测试
 var product1 = new Product({
 	id:'ID1',
 	pic:'../images/merchant/merchant-itemImg1.jpg',
@@ -78,13 +121,12 @@ var product3 = new Product({
 	price:'$7.5'
 });
 
-var productView = new ProductView({
-	model:product1
-});
 
-//Collection
-var ProductCollection = Backbone.Collection.extend({
-	model:Product
-});
 
 var productCollection = new ProductCollection([product1,product2,product3]);
+var productCollectionView = new ProductCollectionView({collection:productCollection});
+
+$(function(){
+
+	$("#product_list").html(productCollectionView.el);
+});
